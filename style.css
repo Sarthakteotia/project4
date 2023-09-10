@@ -1,0 +1,125 @@
+.good{
+  --bg:#3B4664;
+  --title-text:#FFF;
+  --btn-bg: #EAE3DB;
+  --btn-shadow-clr:rgba(0,0,0,0.8);
+  --reset-del-btn-bg:#647299;
+  --reset-del-text-clr: #FFF;
+  --compute-theme-btn-bg:#D13F30;
+  --compute-text-clr: #FFF;
+  --display-bg: #252D44;
+  --numpad-themebtn-bg: #252D44;
+  --numpad-num-text-clr:#070708bc;
+}
+
+body{
+  font-family: 'Inter', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--bg);
+}
+
+main{
+  display: grid;
+  gap: 10px;
+}
+
+.title-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-text{
+  padding: 0px;
+  margin: 0px;
+  font-size: 30px;
+  text-transform: lowercase;
+  color: var(--title-text);
+}
+
+.title-text > span{
+  font-size: 15px;
+}
+
+.display-box{
+  background-color: var(--display-bg);
+  color: var(--title-text);
+  padding: 30px 15px;
+  text-align: left;
+  display: flex;
+  justify-content: end;
+  border-radius: 10px;
+}
+
+.input{
+    background-color: var(--display-bg);
+  color: var(--title-text);
+  padding: 30px 15px;
+  text-align: left;
+  display: flex;
+  justify-content: end;
+  border-radius: 10px;
+}
+.display-box > p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.numpad{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  background-color: var(--numpad-themebtn-bg);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.btn{
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px 20px;
+  border-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  transition-duration: 200ms;
+  color: var(--numpad-num-text-clr);
+  box-shadow: rgba(0, 0, 0, 0.80) 0px 25px 20px -20px;
+}
+
+.btn:hover{
+  transform: translateY(-10%);
+}
+
+.btn-b{
+  grid-column: span 2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.btn-text{
+  text-transform: uppercase;
+  font-size: 23.5px;
+  color: var(--title-text);
+}
+
+#reset, #delete{
+  background-color: var(--reset-del-btn-bg);
+  color: var(--reset-del-text-clr);
+}
+
+#compute{
+  background-color: var(--compute-theme-btn-bg);
+  color: var(--compute-text-clr);
+}
+
+
+@media (max-width: 500px) {
+  .btn{
+    padding: 5px;
+  }
+}
