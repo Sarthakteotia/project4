@@ -1,4 +1,5 @@
-.good{
+html[data-theme]
+{
   --bg:#3B4664;
   --title-text:#FFF;
   --btn-bg: #EAE3DB;
@@ -47,16 +48,6 @@ main{
 
 .display-box{
   background-color: var(--display-bg);
-  color: var(--title-text);
-  padding: 30px 15px;
-  text-align: left;
-  display: flex;
-  justify-content: end;
-  border-radius: 10px;
-}
-
-.input{
-    background-color: var(--display-bg);
   color: var(--title-text);
   padding: 30px 15px;
   text-align: left;
